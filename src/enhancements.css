@@ -455,3 +455,86 @@ body { font-size: 17px; }
   .empty-list::after,
   .language-hint::before { animation: none !important; }
 }
+/* =========================================================
+   MOBILE NAV FIX
+   Keeps Explore + Why we built it visible on all phones
+   ========================================================= */
+
+@media (max-width: 860px) {
+  .fr-nav {
+    width: 100%;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .fr-nav-right {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* Navigation gets its own full-width row */
+  .fr-nav-links {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: 1fr 1.35fr;
+    gap: 8px;
+  }
+
+  .fr-nav-links button {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    white-space: nowrap;
+  }
+
+  /* Data status stays below navigation */
+  .fr-live-status {
+    width: 100%;
+    min-width: 0;
+
+    justify-content: center;
+
+    overflow: visible;
+  }
+
+  /* Keep language button visible */
+  .language-control {
+    display: block !important;
+    visibility: visible !important;
+
+    justify-self: end;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 380px) {
+  .fr-nav-links {
+    grid-template-columns: 0.85fr 1.35fr;
+  }
+
+  .fr-nav-links button {
+    padding: 0 7px;
+    font-size: 12px;
+  }
+
+  .fr-live-status {
+    font-size: 11px;
+  }
+}
