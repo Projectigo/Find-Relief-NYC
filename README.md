@@ -4,41 +4,48 @@
 
 ### **Public restrooms and essential city amenities — when you need them most.**
 
-**A fast, accessible, multilingual civic-tech experience built with NYC public data.**
+A fast, accessible, multilingual civic-tech tool built with NYC public data.
 
 <br>
 
-[![Built with React](https://img.shields.io/badge/React-19-20232A?logo=react&logoColor=61DAFB)](https://react.dev/)
-[![Built with Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
-[![Maps](https://img.shields.io/badge/Maps-Leaflet-199900?logo=leaflet&logoColor=white)](https://leafletjs.com/)
-[![NYC Open Data](https://img.shields.io/badge/Data-NYC%20Open%20Data-103FEF)](https://opendata.cityofnewyork.us/)
-[![Hackathon Project](https://img.shields.io/badge/Project-Built%20for%20NYC-111827)](#-hackathon)
+### 🌐 **[Launch the Live Demo →](https://projectigo.github.io/Find-Relief-NYC/)**
 
 <br>
 
-**One search. One map. One less barrier to experiencing New York City.**
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-103FEF?style=for-the-badge&logo=github)](https://projectigo.github.io/Find-Relief-NYC/)
+[![React](https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
+[![Leaflet](https://img.shields.io/badge/Leaflet-Maps-199900?style=for-the-badge&logo=leaflet&logoColor=white)](https://leafletjs.com/)
+[![NYC Open Data](https://img.shields.io/badge/NYC-Open%20Data-111827?style=for-the-badge)](https://opendata.cityofnewyork.us/)
+
+<br>
+
+> **One search. One map. One less barrier to experiencing New York City.**
 
 </div>
 
 ---
 
-## 🌆 What is Find Relief NYC?
+## 🌆 About Find Relief NYC
 
-**Find Relief NYC** turns fragmented public city data into one simple, practical experience for finding nearby public restrooms across New York City.
+**Find Relief NYC** turns fragmented New York City public data into one simple, practical experience for finding nearby public restrooms and essential city amenities.
 
-Search by **address, ZIP code, or current location** to quickly see:
+Users can search by **address, ZIP code, or current location** to quickly see:
 
 - 🚻 Nearby public restrooms
+- 🟢 Open-now status
 - 🕐 Today's operating hours
 - ♿ Accessibility information
 - 👶 Changing-station availability
-- 🚰 Drinking-water fountains
+- 🚰 Public drinking-water fountains
 - 📶 Free public Wi-Fi
 - 🚲 Bike shelters
 - 🏠 NYC drop-in centers
-- 🌐 Multilingual access
+- 🌐 Language access
 
-Instead of forcing users to search through multiple datasets, agency pages, or raw government records, Find Relief NYC brings the information together in a format designed for **real-world urgency**.
+Instead of forcing people to search through multiple agency pages, datasets, or raw government records, Find Relief NYC organizes the information around one real-world question:
+
+> **What do I need to know if I need a restroom right now?**
 
 ---
 
@@ -46,42 +53,41 @@ Instead of forcing users to search through multiple datasets, agency pages, or r
 
 Find Relief NYC began with a problem that is both deeply personal and remarkably common.
 
-For co-creator **Randy Diaz**, living with Crohn's disease means restroom access is not simply a matter of convenience. It can determine whether navigating New York City feels possible at all.
+For co-creator **Randy Diaz**, living with Crohn's disease means restroom access is not simply a matter of convenience. It can determine whether navigating New York City feels manageable at all.
 
-Yet restroom information can be scattered, incomplete, difficult to interpret, or unavailable at the exact moment it matters most.
+When restroom access is uncertain, planning a normal day can come with the anxiety of not knowing whether a usable bathroom will be nearby when the need becomes urgent.
 
-Randy and **Ryan Diaz** created Find Relief NYC to turn that fragmented public information into a more useful, inclusive city utility — one designed for people who need answers quickly.
+For people with Crohn's disease, IBS, disabilities, pregnancy-related urgency, older adults, or families with young children, the time between realizing a restroom is needed and actually finding one can be very short.
 
-The project is built with the needs of many New Yorkers in mind, including:
+**Most people do not plan their day around bathrooms. They start searching after the need has already arrived.**
 
-- People living with disabilities or medical conditions
-- Parents traveling with children
-- Older New Yorkers
-- Tourists and visitors unfamiliar with the city
-- Anyone dealing with an unexpected bathroom emergency
-- Residents who benefit from multilingual access to city information
+That led to one of the central ideas behind the project:
 
-> **Our goal is simple: take public data that already belongs to New Yorkers and make it useful at the moment they need it most.**
+> **When the need happens, searching cannot become another problem.**
+
+For Randy, having this information available ahead of time also provides something equally important: **peace of mind** — the confidence to plan a day outside instead of avoiding plans because of uncertainty around restroom access.
+
+Randy and **Ryan Diaz** built Find Relief NYC to turn that personal challenge into a practical civic tool designed to help **all New Yorkers**.
 
 ---
 
 ## ✨ Core features
 
-### 🔎 Smart restroom search
+### 🔎 Fast restroom search
 
-Search using:
+Search by:
 
 - NYC street address
 - 5-digit ZIP code
 - Current device location
 
-Results are ranked by proximity so users can immediately see the closest options.
+Results are ranked by proximity so the closest options are immediately visible.
 
 ---
 
 ### 🟢 Open now
 
-By default, Find Relief NYC prioritizes restrooms that appear to be open based on:
+Find Relief NYC prioritizes restrooms that appear to be open according to:
 
 - NYC's posted operating hours
 - Current New York City time
@@ -91,19 +97,19 @@ Users can switch between:
 
 **Open now** · **Show all**
 
-If the city's schedule is unclear or cannot be interpreted safely, the app avoids falsely labeling the restroom as open.
+If the city's schedule cannot be interpreted confidently, the app avoids falsely labeling the restroom as open.
 
 ---
 
 ### 🕐 Today's hours first
 
-Raw operating-hour strings can be difficult to read.
+Raw schedule data can be difficult to read.
 
-Find Relief NYC highlights **today's schedule first**, then lets users expand a result to see the full weekly schedule in a cleaner format.
+Find Relief NYC highlights **today's hours first**, with an expandable full weekly schedule for users who need more detail.
 
 ---
 
-### ♿ Accessibility filters
+### ♿ Accessibility
 
 Users can filter for restrooms with accessibility information and combine that requirement with other needs.
 
@@ -111,93 +117,90 @@ Missing data is clearly labeled instead of being treated as a positive match.
 
 ---
 
-### 👶 Changing-station filters
+### 👶 Changing stations
 
-Users can filter by:
+Users can filter changing-station information by:
 
 - **Any**
 - **Men's**
 - **Women's**
 
-When NYC confirms that a changing station exists but does not specify exactly where it is located, Find Relief NYC keeps it available under **Any** instead of making an unsupported assumption.
+When NYC confirms that a changing station exists but does not specify its exact restroom location, Find Relief NYC keeps the result available under **Any** rather than making an unsupported assumption.
 
 ---
 
 ### 🗺️ Interactive NYC map
 
-Explore restroom and amenity locations using:
+Explore locations using:
 
 - Split view
 - Map-only view
 - List-only view
 - Borough filtering
 - ZIP boundary visualization
-- Search-location marker
-- Clickable map results
+- Search-location markers
+- Clickable restroom results
 - Google Maps directions
 - Optional scroll-wheel map zoom
 
-The layout is responsive across desktop, tablet, and mobile.
+The interface is responsive across desktop, tablet, and mobile.
 
 ---
 
 ### 🏙️ Optional nearby city amenities
 
-The main experience stays focused on restroom access.
-
-Users can optionally add nearby public-service layers:
+The restroom experience remains the primary focus, while users can optionally display:
 
 | Amenity | Purpose |
 |---|---|
-| 🚰 **Water fountains** | Public drinking-water fountains |
-| 📶 **Free Wi-Fi** | Public Wi-Fi hotspot locations |
-| 🚲 **Bike shelters** | Covered bicycle parking structures |
-| 🏠 **Drop-in centers** | Walk-in NYC service centers |
+| 🚰 **Water fountains** | Find nearby public drinking water |
+| 📶 **Free Wi-Fi** | Locate public Wi-Fi hotspots |
+| 🚲 **Bike shelters** | Find covered bicycle parking |
+| 🏠 **Drop-in centers** | Locate walk-in NYC service centers |
 
-These layers are secondary by design so the restroom experience remains fast and uncluttered.
+This makes the project useful beyond restroom emergencies without cluttering the core experience.
 
 ---
 
-### 🌐 Language access
+## ☀️ Everyday city use
+
+Find Relief NYC is designed for both urgent needs and everyday planning.
+
+A parent can plan a day at a park, museum, or event knowing where nearby restrooms and changing stations are located.
+
+A person with an urgent medical condition can identify nearby options before leaving home and quickly find the closest usable restroom if plans change.
+
+And during a hot New York summer day or heat wave, users can turn on the **Water fountains** layer to answer a much more useful question than simply knowing fountains exist:
+
+> **Where is the closest public drinking water to me right now?**
+
+---
+
+## 🌐 Built for a multilingual city
 
 New York City is one of the most linguistically diverse cities in the world.
 
-Find Relief NYC includes a visible language control and can suggest translation when a user's browser is set to a supported non-English language.
+Find Relief NYC includes language access so more people can use public information without language becoming another barrier.
 
-The goal is to make public information easier to use regardless of a person's preferred language.
-
----
-
-### 📡 Data-source status
-
-The interface shows whether each city data source is:
-
-- **Live**
-- **Cached**
-- **Loading**
-- **Offline**
-
-If a live endpoint is temporarily unavailable, the app can fall back to a previously cached successful response when one exists.
-
-That keeps the prototype more resilient during real-world outages and public-data maintenance windows.
+For us, accessibility means more than physical accessibility — it also means making public information easier to understand and act on.
 
 ---
 
-## 🧭 User experience philosophy
+## 📡 Designed for imperfect real-world data
 
-Find Relief NYC was designed around a simple question:
+Public data is valuable, but it is not always clean or complete.
 
-> **What does someone need to know when they need a restroom right now?**
+Find Relief NYC was designed to handle:
 
-That led to a few product principles:
+- Different dataset structures
+- Missing fields
+- Inconsistent operating-hour formats
+- Records with addresses but no coordinates
+- Temporary public-data outages
 
-- Put the closest restroom first
-- Prioritize today's information
-- Make "Open now" the default
-- Keep secondary city services optional
-- Never invent missing government data
-- Use plain language instead of dataset terminology
-- Make accessibility and language inclusion part of the product, not an afterthought
+The app can normalize data, geocode certain records, parse schedules, label missing information clearly, and fall back to cached responses when available.
+
+> **We would rather show uncertainty than invent certainty.**
 
 ---
 
@@ -205,15 +208,15 @@ That led to a few product principles:
 
 Find Relief NYC uses public NYC datasets and city services including:
 
-- 🚻 **NYC Public Restrooms**
-- 🚰 **NYC Parks Drinking Fountains**
-- 📶 **NYC public Wi-Fi hotspot data**
-- 🚲 **NYC DOT Bicycle Parking Shelters**
-- 🏠 **NYC DHS Directory of Homeless Drop-In Centers**
-- 🗺️ **NYC ZIP Code Tabulation Areas**
-- 🏙️ **NYC Borough Boundaries**
-- 🔎 **NYC Planning GeoSearch**
-- 🧭 **OpenStreetMap** map tiles
+- 🚻 NYC Public Restrooms
+- 🚰 NYC Parks Drinking Fountains
+- 📶 NYC public Wi-Fi hotspot data
+- 🚲 NYC DOT Bicycle Parking Shelters
+- 🏠 NYC DHS Directory of Homeless Drop-In Centers
+- 🗺️ NYC ZIP Code Tabulation Areas
+- 🏙️ NYC Borough Boundaries
+- 🔎 NYC Planning GeoSearch
+- 🧭 OpenStreetMap
 
 > Data availability and completeness depend on the underlying public records. Find Relief NYC clearly labels missing information instead of inventing values.
 
@@ -224,7 +227,7 @@ Find Relief NYC uses public NYC datasets and city services including:
 | Technology | Use |
 |---|---|
 | **React** | Front-end application |
-| **Vite** | Development and build tooling |
+| **Vite** | Development and production build tooling |
 | **JavaScript** | Application logic |
 | **Leaflet** | Interactive maps |
 | **React Leaflet** | React map components |
@@ -235,28 +238,19 @@ Find Relief NYC uses public NYC datasets and city services including:
 | **Google Maps URLs** | Directions |
 | **Google Translate integration** | Language access |
 | **LocalStorage** | Cached dataset fallback |
+| **GitHub Pages** | Live deployment |
 
 ---
 
-## 📁 Project structure
+## 🚀 Live demo
 
-```text
-src/
-├── main.jsx
-├── App.jsx
-├── App.css
-├── enhancements.css
-├── LanguageControl.jsx
-├── hours.js
-├── index.css
-└── assets/
-    ├── randy-diaz.jpg
-    └── ryan-diaz.jpg
-```
+### **[Open Find Relief NYC →](https://projectigo.github.io/Find-Relief-NYC/)**
+
+No installation is required to try the live version.
 
 ---
 
-## 🚀 Run locally
+## 💻 Run locally
 
 ### 1. Clone the repository
 
@@ -290,7 +284,7 @@ http://localhost:5173/
 
 ---
 
-## 📦 Required map dependencies
+## 📦 Map dependencies
 
 If needed:
 
@@ -300,31 +294,30 @@ npm install leaflet react-leaflet
 
 ---
 
-## 🧪 Current project status
+## ✅ Project status
 
-**Hackathon prototype / active development**
-
-The application currently supports:
+**Live hackathon prototype**
 
 - ✅ Public restroom search
 - ✅ Address search
 - ✅ ZIP search
 - ✅ Current-location search
 - ✅ Open-now filtering
+- ✅ Today's hours
+- ✅ Full weekly schedules
 - ✅ Accessibility filtering
 - ✅ Changing-station filtering
-- ✅ Today's hours
-- ✅ Weekly schedules
 - ✅ Borough filtering
-- ✅ Interactive map
-- ✅ Water fountains
+- ✅ Interactive NYC map
+- ✅ Drinking-water fountains
 - ✅ Public Wi-Fi
 - ✅ Bike shelters
 - ✅ Drop-in centers
 - ✅ Language control
-- ✅ Live/cached source status
+- ✅ Live/cached data-source status
 - ✅ Responsive layouts
-- ✅ Creator page
+- ✅ Creator story
+- ✅ Live GitHub Pages deployment
 
 ---
 
@@ -334,35 +327,27 @@ The application currently supports:
 **Co-Creator — Find Relief NYC**  
 **The Diaz Brothers · RedTail Digital Group**
 
-🔗 LinkedIn:  
-https://www.linkedin.com/in/randy-diaz-99a231242/
-
-✉️ Email:  
-`redtaildigitalgroup@gmail.com`
-
----
+🔗 [LinkedIn](https://www.linkedin.com/in/randy-diaz-99a231242/)  
+✉️ `redtaildigitalgroup@gmail.com`
 
 ### Ryan Diaz
 **Co-Creator — Find Relief NYC**  
 **The Diaz Brothers · RedTail Digital Group**
 
-🔗 LinkedIn:  
-https://www.linkedin.com/in/ryan-diaz-35ba92429/
-
-✉️ Email:  
-`redtaildigitalgroup@gmail.com`
+🔗 [LinkedIn](https://www.linkedin.com/in/ryan-diaz-35ba92429/)  
+✉️ `redtaildigitalgroup@gmail.com`
 
 ---
 
 ## 🔒 Privacy
 
-Creator contact cards intentionally contain **no phone numbers**.
+Public creator contact cards intentionally contain **no phone numbers**.
 
-Public creator contact options are limited to:
+Contact options are limited to:
 
 - RedTail Digital Group email
 - Individual LinkedIn profiles
-- Phone-free vCard contact downloads
+- Phone-free vCard downloads
 
 ---
 
@@ -370,7 +355,7 @@ Public creator contact options are limited to:
 
 Find Relief NYC was created for the **Built for NYC: AI Hackathon at NYPL**, organized by the **New York Public Library** and **Major League Hacking**, with support from **Google.org**.
 
-The project explores how public data can be transformed from raw government records into a fast, inclusive, human-centered city utility.
+The project explores how public city data can be transformed from raw government records into a fast, inclusive, human-centered utility.
 
 ---
 
@@ -380,7 +365,7 @@ The project explores how public data can be transformed from raw government reco
 
 ### **Make NYC public data useful at the exact moment someone needs it.**
 
-**One search. One map. One less barrier to experiencing New York City.**
+### **One search. One map. One less barrier to experiencing New York City.**
 
 </div>
 
@@ -390,17 +375,17 @@ The project explores how public data can be transformed from raw government reco
 
 Find Relief NYC is a **hackathon civic-tech prototype** and is **not an official New York City government service**.
 
-Operating hours, accessibility information, changing-station details, amenity availability, and other public records may change.
-
-Users should verify critical information when necessary.
+Operating hours, accessibility information, changing-station details, amenity availability, and other public records may change. Users should verify critical information when necessary.
 
 ---
 
 <div align="center">
 
-### 🚻 **Find Relief NYC**
+## 🚻 Find Relief NYC
 
-Built by **The Diaz Brothers**  
+**Built by The Diaz Brothers**  
 **RedTail Digital Group**
+
+### **[Launch Live Demo →](https://projectigo.github.io/Find-Relief-NYC/)**
 
 </div>
