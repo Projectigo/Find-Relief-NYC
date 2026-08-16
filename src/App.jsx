@@ -1011,7 +1011,7 @@ export default function App() {
             <div className="search-row">
               <div className="search-input-wrap">
                 <span>⌕</span>
-                <input ref={searchInputRef} id="search" value={query} onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleSearch()} placeholder="Address or ZIP code, for example 10034" autoComplete="off" />
+                <input ref={searchInputRef} id="search" value={query} onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleSearch()} placeholder="Address or ZIP code, for example 10010" autoComplete="off" />
                 {suggestions.length > 0 && (
                   <div className="suggestions">
                     <div className="suggestion-head">Choose a NYC match</div>
