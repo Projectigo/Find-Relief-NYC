@@ -456,43 +456,158 @@ body { font-size: 17px; }
   .language-hint::before { animation: none !important; }
 }
 /* =========================================================
-   MOBILE NAV FIX
-   Keeps Explore + Why we built it visible on all phones
+   FIND RELIEF NYC — FINAL MOBILE RESPONSIVE FIX
    ========================================================= */
 
-@media (max-width: 860px) {
-  .fr-nav {
-    width: 100%;
-    align-items: stretch;
-    gap: 16px;
-  }
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0 !important;
+  margin: 0;
+  overflow-x: clip;
+}
 
-  .fr-nav-right {
+.app-shell,
+.top-hero,
+.hero-grid,
+.hero-copy,
+.search-console {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 760px) {
+  .top-hero .top-nav {
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 10px;
+    grid-template-areas:
+      "brand language"
+      "links links";
+
     align-items: center;
+    gap: 10px 12px;
+
+    padding: 14px 15px 12px;
   }
 
-  /* Navigation gets its own full-width row */
-  .fr-nav-links {
-    grid-column: 1 / -1;
-    width: 100%;
-    display: grid !important;
-    grid-template-columns: 1fr 1.35fr;
-    gap: 8px;
+  .top-hero .top-nav-tools {
+    display: contents;
   }
 
-  .fr-nav-links button {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+  /* ---------- BRAND ---------- */
+
+  .top-hero .brand {
+    grid-area: brand;
 
     width: 100%;
     min-width: 0;
-    min-height: 46px;
+    max-width: 100%;
 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    overflow: hidden;
+  }
+
+  .top-hero .brand-mark {
+    width: 44px;
+    height: 44px;
+
+    flex: 0 0 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-hero .brand > span:last-child {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .top-hero .brand strong {
+    display: block;
+
+    min-width: 0;
+    max-width: 100%;
+
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.1;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .top-hero .brand small {
+    display: none;
+  }
+
+  /* ---------- LANGUAGE ---------- */
+
+  .top-hero .language-control {
+    grid-area: language;
+
+    justify-self: end;
+
+    min-width: 0;
+  }
+
+  .top-hero .language-button {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-hero .language-button span:last-child {
+    display: none;
+  }
+
+  /* Data status remains available elsewhere in the interface.
+     Hiding it here prevents the mobile header from overflowing. */
+  .top-hero .source-health-wrap {
+    display: none !important;
+  }
+
+  /* ---------- NAVIGATION ---------- */
+
+  .top-hero .top-nav-links {
+    grid-area: links;
+
+    width: 100%;
+    min-width: 0;
+
+    display: grid !important;
+
+    grid-template-columns:
+      minmax(0, 0.8fr)
+      minmax(0, 1.2fr);
+
+    gap: 8px;
+  }
+
+  .top-hero .top-nav-links button {
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+
+    display: flex !important;
     align-items: center;
     justify-content: center;
 
@@ -500,41 +615,118 @@ body { font-size: 17px; }
 
     font-size: 13px;
     font-weight: 700;
+    line-height: 1.15;
 
+    text-align: center;
     white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  /* Data status stays below navigation */
-  .fr-live-status {
+  /* ---------- HERO ---------- */
+
+  .top-hero .hero-grid {
     width: 100%;
+    max-width: 100%;
     min-width: 0;
 
-    justify-content: center;
+    grid-template-columns: minmax(0, 1fr);
 
-    overflow: visible;
+    gap: 30px;
+
+    padding:
+      34px
+      16px
+      48px;
   }
 
-  /* Keep language button visible */
-  .language-control {
-    display: block !important;
-    visibility: visible !important;
+  .top-hero .hero-copy {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
 
-    justify-self: end;
+  .top-hero .hero-copy .eyebrow {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.4;
+
+    letter-spacing: 0.12em;
+
+    white-space: normal;
+
+    overflow-wrap: anywhere;
+  }
+
+  .top-hero .hero-copy h1 {
+    width: 100%;
+    max-width: 100%;
+
+    margin:
+      12px
+      0
+      18px;
+
+    font-size: clamp(40px, 11.5vw, 50px);
+    line-height: 0.98;
+
+    letter-spacing: -0.055em;
+  }
+
+  .top-hero .hero-copy p {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  /* ---------- SEARCH ---------- */
+
+  .top-hero .search-console,
+  .top-hero .search-row,
+  .top-hero .search-input-wrap,
+  .top-hero .search-input-wrap input {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 }
 
-/* Extra-small phones */
-@media (max-width: 380px) {
-  .fr-nav-links {
-    grid-template-columns: 0.85fr 1.35fr;
+/* Very small phones */
+@media (max-width: 390px) {
+  .top-hero .top-nav {
+    padding-inline: 12px;
   }
 
-  .fr-nav-links button {
-    padding: 0 7px;
+  .top-hero .brand-mark {
+    width: 40px;
+    height: 40px;
+
+    flex-basis: 40px;
+  }
+
+  .top-hero .brand strong {
+    font-size: 16px;
+  }
+
+  .top-hero .top-nav-links button {
+    padding-inline: 7px;
+
     font-size: 12px;
   }
 
-  .fr-live-status {
-    font-size: 11px;
+  .top-hero .hero-grid {
+    padding-inline: 14px;
+  }
+
+  .top-hero .hero-copy h1 {
+    font-size: clamp(38px, 12vw, 44px);
   }
 }
